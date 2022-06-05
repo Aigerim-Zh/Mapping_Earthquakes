@@ -3,7 +3,7 @@
 The purpose of this project is to visually show the differences between the magnitudes of earthquakes all over the world for the last seven days.
 
 ## Code
-- All materials for this project are located in the [Earthquake_Challenge]() folder.
+- All materials for this project are located in the [Earthquake_Challenge](https://github.com/Aigerim-Zh/Mapping_Earthquakes/tree/main/Earthquake_Challenge) folder.
     - [challenge_logic.js](https://github.com/Aigerim-Zh/Mapping_Earthquakes/blob/main/Earthquake_Challenge/static/js/challenge_logic.js): the code that builds the interactive map and fills it with data from an URL.
     - [index.html](https://github.com/Aigerim-Zh/Mapping_Earthquakes/blob/main/Earthquake_Challenge/index.html): HTML file used to build the webpage. 
     - [style.css](https://github.com/Aigerim-Zh/Mapping_Earthquakes/blob/main/Earthquake_Challenge/static/css/style.css): CSS file to style the page.
