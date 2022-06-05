@@ -1,52 +1,36 @@
 # Mapping_Earthquakes
+# Project Overview
+The purpose of this project is to visually show the differences between the magnitudes of earthquakes all over the world for the last seven days.
 
-The purpose of this project is to visually show the differences between teh magnitudes of earthquakes all over the world for the last seven days.
+## Code
+- All materials for this project are located in the [Earthquake_Challenge]() folder.
+    - [challenge_logic.js](): the code that builds the interactive map and fills it with data from an URL.
+    - [index.html](): HTML file used to build the webpage. 
+    - [style.css]: CSS file to style the page.
 
-I am tasked with using the URL for GeoJson earthquake data from the USGS website and retrieve geographical coordinates and the magnitudes of earthquakes for the last seven days. Then I will add the data to a map.
+## Used Tools and Resources
+- ```JavaScript``` and ```D3.js``` library to retrieve coordinates and magnitudes from the GeoJSON data.
+- ```Leaflet``` library to plot the data on a Mapbox map through an API request and create interactivity for the earthquake data.
 
+# Results
 
-The earthquake data in relation to the tectonic plates' location on the earth. See all the earthquakes with a magnitude greater than 4.5 on the map, and data on a third map.
+Using the URL for GeoJson earthquake data from the USGS website, I retrieved geographical coordinates and the magnitudes of earthquakes for the last seven days. Then I added the data to a map. 
+- Pop-up marker depicts the location and magnitude. 
+- Legend was added for color shading of markers according to the magnitude.
 
-```JavaScript``` and ```D3.js``` library to retrieve coordinates and magnitudes from the GeoJSON data.
-```Leaflet``` library to plot the data on a Mapbox map through an API request and create interactvity for the earthquake data.
+Once the basic map was created, I worked on the following deliverables.
 
 # Deliverable 1. Add Tectonic Plate Data
+To the basic map, I added tectonic plate data using d3.json(), added the data using the geoJSON() layer, and set the tectonic plate LineString data to stand out on the map, and added the tectonic plate data to the overlay object with the earthquake data.
+
+![](https://github.com/Aigerim-Zh/Mapping_Earthquakes/blob/main/Earthquake_Challenge/Del1_GIF.gif)
 
 # Deliverable 2. Add Major Earthquake Data
+To the map in Deliverable 1, I added major earthquake data to the map using d3.json(). I also added color and set the radius of the circle markers based on the magnitude of an earthquake, and add a popup marker for each earthquake that displays the magnitude and location of the earthquake using the GeoJSON layer, geoJSON(). 
+
+![](https://github.com/Aigerim-Zh/Mapping_Earthquakes/blob/main/Earthquake_Challenge/Del2_GIF.gif)
 
 # Deliverable 3. Add an Additional Map
+Finally, I added a third map style ("Dark") to my earthquake map.
 
-
-Create interactive maps
-
-with JavaScript in D3 library
-
-GeoJSON data is the industry standard representative geographic features such as 
-
-* Points which contain addresses and locations, like latitude and longitude coordinates
-* Linestrings, which contain coordinates for the boundaries of streets, highways, travel routes, and tectonic plates
-* Polygons, which contain coordinates for the boundaries of zip codes, counties, countries, providences, and tracks of land
-
-
-Non-Spatial Attributes such as 
-* Elevation
-* Temperature
-* Rain accumumilation
-* Hail size
-* Tornado/hurricane strength
-* Magnitude of an earthquake
-
-D3 and Leaflet libraries
-
-Build an interactive visualization of earthquakes around the world
-
-and plot the dat on the mapbox
-
-On the map, the magnitude and location will be shown on a pop-up marker. 
-
-The marker size and color reflect the magnitude of an earthquake. Earthquakes with larger magnitudes will appear with darker and larger markers.
-
-
-
-radius equivalent to city population
-
+![](https://github.com/Aigerim-Zh/Mapping_Earthquakes/blob/main/Earthquake_Challenge/Del3_GIF.gif)
